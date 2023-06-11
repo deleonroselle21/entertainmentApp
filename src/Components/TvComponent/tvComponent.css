@@ -1,0 +1,38 @@
+.tvSeries__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 2rem;
+    padding-top:1.5rem;
+}
+.tvSeries{
+    padding-left: 120px;
+
+}
+
+@media (max-width: 600px) {}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+
+   
+    .main__searchfield{
+        padding-top:8rem;
+        padding-left: 1rem;
+
+  
+    }
+    .tvSeries{
+        padding-left: 1rem;
+    
+    }
+
+
+
+
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
