@@ -1,14 +1,25 @@
 .movies__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
 
-    gap: 2rem;
+    column-gap: 1rem;
     padding-top:1.5rem;
+    padding-right: 1rem;
 }
 .movies{
     padding-left: 120px;
 }
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .movies{
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    .movies__container{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+}
 
 @media (min-width: 601px) and (max-width: 1023px) {
    

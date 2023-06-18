@@ -1,10 +1,17 @@
 .nav__container {
 
 
-    height: 100%;
-    padding: 1rem;
-    position: absolute;
+   
+
+
+
+position: fixed;
+   /* position: absolute;*/
     z-index: 100;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    
+    
 
 
 
@@ -15,7 +22,7 @@
 .nav__container__content {
     display: grid;
     grid-template-rows: 80px 1fr 1fr;
-    position: fixed;
+    
 
 
 
@@ -23,7 +30,7 @@
     width: fit-content;
     padding: 1.5rem 1rem 1.5rem 1rem;
 
-    height: 100vh;
+   /* height: 100vh;*/
     border-radius: 10px;
 }
 
@@ -72,33 +79,100 @@
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4028%) hue-rotate(153deg) brightness(114%) contrast(111%);
 }
 
+.nav__links a.active{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4028%) hue-rotate(153deg) brightness(114%) contrast(111%);
 
-@media (max-width: 600px) {}
+}
 
-@media (min-width: 601px) and (max-width: 1023px) {
-    .nav__container__content {
-        display: flex;
-        gap:1rem;
+
+@media (max-width: 600px) {
+    .nav__container {
+      padding: 0;
+    
+         display: flex;
+     
+         width:100%;
+       
+   
+     }
+
+     .nav__container__content {
+        display: grid;
+   
+       height: fit-content;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width:100%;
+        padding:0;
+        
+      
         grid-template-columns: 1fr 1fr 1fr;
-        height: fit-content;
 
 
     }
     .nav__logo{
         width:100%;
+       
     }
     .nav__links {
         display: flex;
         width: 100%;
+        gap:2.5rem;
+    
     }
 
     .nav__profile {
         width:100%;
         align-items: center;
         justify-content: center;
+        
+    }
+
+
+
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+    .nav__container {
+       padding-left: 1rem;
+        padding-right:1rem;
+        display: flex;
+    
+        width:100%;
+        background-color: var(--body-bgColor);
+      
+  
+    }
+   
+    .nav__container__content {
+        display: grid;
+   
+       height: fit-content;
+        justify-content: center;
+        align-items: center;
+       /* width:96.5%;*/
+       width:100%;
+        padding:0;
+      
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+    }
+    .nav__logo{
+        width:100%;
+       
+    }
+    .nav__links {
+        display: flex;
+        width: 100%;
+    
+    }
+
+    .nav__profile {
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        
     }
 
 

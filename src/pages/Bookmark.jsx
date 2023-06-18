@@ -1,9 +1,9 @@
 import React from 'react'
 import { BookmarkComponent } from '../Components/BookmarkComponent/BookmarkComponent'
 
-const Bookmark = () => {
+const Bookmark = (props) => {
   return (
-    <BookmarkComponent/>
+    <BookmarkComponent query={props.query} list={props.list}/>
     
   )
 }

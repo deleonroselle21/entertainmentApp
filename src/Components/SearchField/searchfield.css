@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding-left: 120px;
-    padding-top:1rem;
+    padding-top:2rem;
    
 
 }
@@ -14,10 +14,25 @@
     font-size: 1.5rem;
     font-weight: 300;
     border: none;
+    color: white;
+    border: none;
+}
+.main__searchfield input:focus{
+   outline: none;
 }
 
+@media (max-width: 600px) {
+    .main__searchfield input{
+        font-size: 1rem;
 
-@media (max-width: 600px) {}
+    }
+    .main__searchfield{
+        padding-top:6rem;
+        padding-left: 1rem;
+
+  
+    }
+}
 
 @media (min-width: 601px) and (max-width: 1023px) {
    

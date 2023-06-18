@@ -1,5 +1,6 @@
 .cardDescription-regular{
     display: flex;
+  
     color: var(--color-white);
     font-weight: 300;
     font-size: 0.81rem;
@@ -11,6 +12,7 @@
 .cardComponentRegular__container .card__image{
     border-radius: 10px;
     position: relative;
+    width:100%;
 }
 
 .cardTitle-regular{
@@ -32,8 +34,20 @@
     background-color: gray;
 
 }
-.card__play{
+
+.cardBookmark-regular:hover{
+    cursor: pointer;
+
+}
+.card__mainContent:hover .card__play{
     display: flex;
+}
+
+
+
+
+.card__play{
+    display: none;
     gap:0.8rem;
     color: var(--color-white);
     background-color: gray;
@@ -42,10 +56,60 @@
     justify-content: center;
     align-items: center;
     position:absolute;
-    top:43%;
-    left:36%;
+   /* top:43%;
+    left:36%;*/
+    top: 39%;
+    left:37%;
+    opacity:0.64;
+ 
+
+    
   
+}
+.card__image{
+    
+transition: 0.3s;
 }
 .card__play p{
   padding-right:0.6rem ;
 }
+.card__image:hover + .card__play {
+    display: flex;
+   
+
+}
+.cardBookmark-regular:hover + .card__play {
+    display: flex;
+   
+
+}
+.card__play:hover{
+    display:flex;
+    cursor: pointer;
+
+}
+/*
+.card__image:hover {
+    opacity: 0.4;
+}
+*/
+.card__mainContent:hover > .card__image{
+   opacity: 0.4;
+
+}
+
+ 
+/*mobile*/
+@media  (max-width: 600px) {
+    
+   
+  }
+
+/*tablet*/
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    
+
+  
+    
+  }

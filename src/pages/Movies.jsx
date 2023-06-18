@@ -3,9 +3,9 @@ import React from 'react'
 import MovieComponent from '../Components/MovieComponent/MovieComponent'
 
 
-const Movies = () => {
+const Movies = (props) => {
     return (
-      <MovieComponent/>
+      <MovieComponent query={props.query} list={props.list}/>
     )
 }
 

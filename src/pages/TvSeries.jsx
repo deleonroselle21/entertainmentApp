@@ -2,9 +2,9 @@ import React from 'react'
 import TvComponent from '../Components/TvComponent/TvComponent'
 
 
-const TvSeries = () => {
+const TvSeries = (props) => {
   return (
-    <TvComponent/>
+    <TvComponent query={props.query} list={props.list}/>
   )
 }
 

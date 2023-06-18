@@ -2,13 +2,20 @@
   /*  width:470px;
     height: 230px;*/
     margin: 1rem;
-    padding: 1rem;
-    background-color: red;
+   /* padding: 1rem;*/
+
     position:relative;
     border-radius: 10px;
+    width:100%;
+    overflow: hidden;
+    
   
  
 }
+.card__container:hover > .card__image{
+    opacity: 0.4;
+ 
+ }
 .card__bookmark{
     position:absolute;
     display: flex;
@@ -26,6 +33,7 @@
    
     position: absolute;
     bottom:10px;
+    padding-left: 1rem;
 }
 .card__movie__description{
     display: flex;
@@ -34,9 +42,40 @@
     font-size: 0.93rem;
     color: var(--color-white);
     opacity: 0.75;
+    padding-bottom: 0.3rem;
 
 }
-
+.card__play-trending{
+    display: none;
+    gap:0.8rem;
+    color: var(--color-white);
+    background-color: gray;
+    border-radius: 20px;
+    padding:0.3rem 0.9rem 0.3rem 0.3rem;
+    /*padding:0.3rem;*/
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+   /* top:43%;
+    left:36%;*/
+    top: 39%;
+    left:37%;
+    opacity:0.64;
+ 
+  
+    
+  
+}
+.card__play-trending:hover{
+    cursor: pointer;
+}
+/*
+.card__container:hover{
+  
+}*/
+.card__container:hover .card__play-trending{
+  display: flex;
+}
 .card__movie__title{
     font-weight: 500;
     font-size:1.5rem;
