@@ -3,6 +3,8 @@ import './cardComponentRegular.css'
 import bg from '../../assets/thumbnails/bottom-gear/trending/small.jpg'
 import IconBookmark from '../../assets/icon-bookmark-empty.svg'
 import  IconBookMarkFull from  '../../assets/icon-bookmark-full.svg'
+import IconMovies from '../../assets/icon-nav-movies.svg'
+import IconTv from '../../assets/icon-nav-tv-series.svg'
 import IconPlay from '../../assets/icon-play.svg'
 
 const CardComponentRegular = (props) => {
@@ -10,9 +12,12 @@ const CardComponentRegular = (props) => {
     const [bookmark,setBookmark]=useState(props.bookmark);
     let logo;
     if(props.category==="Movie")
-    logo="../../assets/icon-nav-movies.svg"
+    logo={IconMovies}
+    //logo="../../assets/icon-nav-movies.svg"
     if(props.category==="TV Series")
-    logo="../../assets/icon-nav-tv-series.svg"
+    logo={IconTv}
+
+    //logo="../../assets/icon-nav-tv-series.svg"
 
     console.log(props.logo);
     
