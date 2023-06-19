@@ -11,13 +11,13 @@ const CardComponent = (props) => {
     const [bookmark, setBookmark] = useState(props.bookmark);
     let logo;
     if(props.category==="Movie")
-    //logo={IconMovies}
-    logo={IconMovies};
-  // logo="../../assets/icon-nav-movies.svg"
+    logo=IconMovies
+   //logo={IconMovies};
+  //logo="../assets/icon-nav-movies.svg"
     if(props.category==="TV Series")
+    logo=IconTv
     //logo={IconTv}
-    logo={IconTv}
-    //logo="../../assets/icon-nav-tv-series.svg"
+    //logo="../assets/icon-nav-tv-series.svg"
 
     // console.log(props.isBookmarked)
     /*
