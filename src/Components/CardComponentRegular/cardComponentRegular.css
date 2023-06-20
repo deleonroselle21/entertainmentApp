@@ -10,7 +10,7 @@
     gap:0.3rem;
 }
 .cardComponentRegular__container .card__image{
-    border-radius: 10px;
+    border-radius: 8px;
     position: relative;
     width:100%;
 }
@@ -32,6 +32,7 @@
     height:32px;
     border-radius: 25px;
     background-color: gray;
+  opacity: 0.64;
 
 }
 
@@ -97,13 +98,28 @@ transition: 0.3s;
    opacity: 0.4;
 
 }
-
+.cardDescription__rg__content{
+    display:flex;
+    width:fit-content;
+    justify-content:center;
+    align-items:center;
+    gap:0.3rem;
+}
  
 /*mobile*/
 @media  (max-width: 600px) {
-    
+    .cardTitle-regular{
+        font-weight: 500;
+        font-size: 0.87rem;
+        
+    }
+    .card__play{
+
+ left:28%;
+    }
    
   }
+
 
 /*tablet*/
 

@@ -18,6 +18,7 @@
     }
     .tvSeries__container{
         grid-template-columns: 1fr 1fr;
+        column-gap: 0.8rem;
     }
 
 }

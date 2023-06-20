@@ -14,9 +14,11 @@
     .movies{
         padding-left: 1rem;
         padding-top: 1rem;
+      
     }
     .movies__container{
         grid-template-columns: 1fr 1fr ;
+        column-gap: 0.8rem;
     }
 
 }

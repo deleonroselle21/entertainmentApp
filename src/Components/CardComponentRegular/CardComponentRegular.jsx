@@ -12,11 +12,11 @@ const CardComponentRegular = (props) => {
     const [bookmark,setBookmark]=useState(props.bookmark);
     let logo;
     if(props.category==="Movie")
-    //logo={IconMovies}
-    logo="../../assets/icon-nav-movies.svg"
+    logo=IconMovies
+    
     if(props.category==="TV Series")
-    //logo={IconTv}
-    logo="../../assets/icon-nav-tv-series.svg"
+    logo=IconTv
+ 
 
     console.log(props.logo);
     
@@ -54,7 +54,7 @@ const CardComponentRegular = (props) => {
             <div className='cardDescription-regular'>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>{props.year}</div>
                 <span>&#8729;</span>
-                <div style={{display:"flex",width:"fit-content",justifyContent:"center",alignItems:"center",gap:"0.3rem"}}><img style={{width:"100%",height:"100%", filter:" brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4028%) hue-rotate(153deg) brightness(114%) contrast(111%)"}} src={logo} ></img><p style={{whiteSpace:"nowrap"}}>{props.category}</p></div>
+                <div className="cardDescription__rg__content"/*style={{display:"flex",width:"fit-content",justifyContent:"center",alignItems:"center",gap:"0.3rem"}}*/><img style={{width:"20%",height:"75%", filter:" brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4028%) hue-rotate(153deg) brightness(114%) contrast(111%)"}} src={logo} ></img><p style={{whiteSpace:"nowrap"}}>{props.category}</p></div>
                 <span>&#8729;</span>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>{props.rating}</div>
 

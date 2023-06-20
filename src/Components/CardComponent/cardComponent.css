@@ -28,12 +28,25 @@
     border-radius: 25px;
     background-color: gray;
 }
+.card__tr__description{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0.3rem;
+}
+.card__tr__image{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4028%) hue-rotate(153deg) brightness(114%) contrast(111%);
+    width: 20%;
+     height: 75%;
+
+}
 
 .card__container__description{
    
     position: absolute;
-    bottom:10px;
+    bottom:18px;
     padding-left: 1rem;
+    
 }
 .card__movie__description{
     display: flex;
@@ -59,7 +72,7 @@
    /* top:43%;
     left:36%;*/
     top: 39%;
-    left:37%;
+    left:34%;
     opacity:0.64;
  
   
