@@ -12,10 +12,10 @@ const CardComponent = (props) => {
     let logo;
     if (props.category === "Movie")
         logo = IconMovies
- 
+
     if (props.category === "TV Series")
         logo = IconTv
-   
+
 
     const handleBookmark = () => {
         setBookmark(bookmark => !bookmark)

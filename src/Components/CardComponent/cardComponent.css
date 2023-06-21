@@ -10,10 +10,15 @@
     overflow: hidden;
     
   
- 
+}
+
+.card__image{
+border-radius: 10px;
+
 }
 .card__container:hover > .card__image{
     opacity: 0.4;
+
  
  }
 .card__bookmark{
@@ -21,12 +26,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top:15px;
-    right:15px;
-    width:32px;
-    height:32px;
-    border-radius: 25px;
-    background-color: gray;
+  /*  top:15px;
+    right:15px;*/
+    top:0.7rem;
+    right:0.7rem;
+   /* width:32px;*/
+    padding: 0.6rem;
+    /*height:32px;*/
+    border-radius: 20px;
+    background-color:rgba(151, 151, 151,0.5);
 }
 .card__tr__description{
     display:flex;
